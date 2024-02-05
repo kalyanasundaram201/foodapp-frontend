@@ -21,7 +21,7 @@ export default function Header() {
         <header id='main-header'>
             <div id='title'>
                 <img src={logo} alt="logo" />
-                <h1>TasteTrove Restaurent</h1>
+                <h1>Flavo</h1>
             </div>
             <nav>
                 <Button textOnly onClick={handleShowCart}>
