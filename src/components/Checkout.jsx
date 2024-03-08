@@ -71,7 +71,7 @@ export default function Checkout() {
          actions = (<span>Sending Oreder...</span>)
     }
 
-    if(data && !error){
+    if(data){
     return  <Modal className='checkout' open={userProgressCtx.progress === 'checkout'} onClose={handleModalHide}>
           <h2>Success!</h2>
           <p>Your oredr was submitted successfully</p>
@@ -92,7 +92,7 @@ export default function Checkout() {
                     <Input label="Postal Code" type="text" id='postal-code' />
                     <Input label="city" type="text" id='city' />
                 </div>
-                {error && <Error title='Failed to submit order' message={error}/>}
+{/*                 {error && <Error title='Failed to submit order' message={error}/>} */}
                 <p className='modal-actions'> {actions}</p>
             </form>
         </Modal>
